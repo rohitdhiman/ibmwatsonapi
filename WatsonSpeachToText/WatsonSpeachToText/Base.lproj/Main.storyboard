@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l6L-0j-v3x">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="IBMW3VoiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-TU-VJZ">
+                                <rect key="frame" x="20" y="91" width="560" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="26v-nh-qtp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tap for voice based search on IBM w3"/>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aps-Aa-Mar"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status : Please tap on button for voice based search" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8F-JQ-l1U">
+                                <rect key="frame" x="20" y="242" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V6D-CF-97w">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUW-Sb-MqY">
+                                <rect key="frame" x="20" y="161" width="560" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OQq-fS-5Gf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tap for voice based search on Google"/>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVh-Yr-IRL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IUW-Sb-MqY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5SL-r0-wk0"/>
+                            <constraint firstItem="RjV-TU-VJZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Tx-x7-0dh"/>
+                            <constraint firstItem="V6D-CF-97w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7hu-dW-FN9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8F-JQ-l1U" secondAttribute="trailing" id="A6c-NA-ykc"/>
+                            <constraint firstItem="e8F-JQ-l1U" firstAttribute="top" secondItem="IUW-Sb-MqY" secondAttribute="bottom" constant="21" id="C4w-Zu-reo"/>
+                            <constraint firstItem="RjV-TU-VJZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="MWO-QZ-eQv"/>
+                            <constraint firstItem="IUW-Sb-MqY" firstAttribute="top" secondItem="RjV-TU-VJZ" secondAttribute="bottom" constant="10" id="Mq6-lp-A5R"/>
+                            <constraint firstItem="V6D-CF-97w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tgo-JV-KJm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RjV-TU-VJZ" secondAttribute="trailing" id="Tks-de-Kyw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUW-Sb-MqY" secondAttribute="trailing" id="ZI4-92-I7f"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RjV-TU-VJZ" secondAttribute="leading" id="aLF-RI-7P8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IUW-Sb-MqY" secondAttribute="leading" id="bEC-z8-7fN"/>
+                            <constraint firstItem="e8F-JQ-l1U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lhI-2M-MwS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e8F-JQ-l1U" secondAttribute="leading" id="nB8-Ha-McT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yHz-qI-ftg"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="V6D-CF-97w" id="g4e-O2-oqO"/>
+                        <outlet property="googleSearchButton" destination="IUW-Sb-MqY" id="T4I-EJ-Vim"/>
+                        <outlet property="recordButtonTapped" destination="RjV-TU-VJZ" id="Um6-Po-zXG"/>
+                        <outlet property="statusLabel" destination="e8F-JQ-l1U" id="Qu0-gi-vqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a2T-Gn-gDD">
+            <objects>
+                <navigationController id="l6L-0j-v3x" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lAF-sh-l7I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" id="wXF-nb-Gre"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akA-WH-cGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="331"/>
+        </scene>
+    </scenes>
+</document>

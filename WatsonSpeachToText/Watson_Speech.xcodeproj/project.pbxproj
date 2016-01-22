@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F90252DB1C497B9E0075164F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F90252DA1C497B9E0075164F /* main.m */; };
+		F90252DE1C497B9E0075164F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F90252DD1C497B9E0075164F /* AppDelegate.m */; };
+		F90252E11C497B9E0075164F /* IBMW3VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90252E01C497B9E0075164F /* IBMW3VoiceViewController.m */; };
+		F90252E41C497B9E0075164F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90252E21C497B9E0075164F /* Main.storyboard */; };
+		F90252E71C497B9E0075164F /* WatsonSpeachToText.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F90252E51C497B9E0075164F /* WatsonSpeachToText.xcdatamodeld */; };
+		F90252E91C497B9E0075164F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90252E81C497B9E0075164F /* Assets.xcassets */; };
+		F90252EC1C497B9E0075164F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90252EA1C497B9E0075164F /* LaunchScreen.storyboard */; };
+		F90252F71C497B9E0075164F /* WatsonSpeachToTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F90252F61C497B9E0075164F /* WatsonSpeachToTextTests.m */; };
+		F90253031C497CBF0075164F /* watsonsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253021C497CBF0075164F /* watsonsdk.framework */; };
+		F90253051C497D570075164F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253041C497D570075164F /* Foundation.framework */; };
+		F90253071C497D610075164F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253061C497D610075164F /* Security.framework */; };
+		F90253091C497D700075164F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253081C497D700075164F /* CoreAudio.framework */; };
+		F902530B1C497D7B0075164F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F902530A1C497D7B0075164F /* QuartzCore.framework */; };
+		F902530D1C497D890075164F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F902530C1C497D890075164F /* AVFoundation.framework */; };
+		F902530F1C497D950075164F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F902530E1C497D950075164F /* AudioToolbox.framework */; };
+		F90253111C497DA00075164F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253101C497DA00075164F /* CFNetwork.framework */; };
+		F90253131C4993330075164F /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253121C4993330075164F /* IMFCore.framework */; };
+		F90253151C4A13940075164F /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253141C4A13940075164F /* libicucore.A.tbd */; };
+		F902531A1C4A3E820075164F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90253191C4A3E820075164F /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F90252F31C497B9E0075164F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90252CE1C497B9E0075164F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F90252D51C497B9E0075164F;
+			remoteInfo = WatsonSpeachToText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F90252D61C497B9E0075164F /* Watson_Speech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watson_Speech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90252DA1C497B9E0075164F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F90252DC1C497B9E0075164F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F90252DD1C497B9E0075164F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F90252DF1C497B9E0075164F /* IBMW3VoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBMW3VoiceViewController.h; sourceTree = "<group>"; };
+		F90252E01C497B9E0075164F /* IBMW3VoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBMW3VoiceViewController.m; sourceTree = "<group>"; };
+		F90252E31C497B9E0075164F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F90252E61C497B9E0075164F /* WatsonSpeachToText.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatsonSpeachToText.xcdatamodel; sourceTree = "<group>"; };
+		F90252E81C497B9E0075164F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F90252EB1C497B9E0075164F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F90252ED1C497B9E0075164F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F90252F21C497B9E0075164F /* Watson_Speech.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watson_Speech.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90252F61C497B9E0075164F /* WatsonSpeachToTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatsonSpeachToTextTests.m; sourceTree = "<group>"; };
+		F90252F81C497B9E0075164F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F90253021C497CBF0075164F /* watsonsdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = watsonsdk.framework; sourceTree = "<group>"; };
+		F90253041C497D570075164F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F90253061C497D610075164F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F90253081C497D700075164F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F902530A1C497D7B0075164F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F902530C1C497D890075164F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F902530E1C497D950075164F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F90253101C497DA00075164F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F90253121C4993330075164F /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFCore.framework; sourceTree = "<group>"; };
+		F90253141C4A13940075164F /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		F90253191C4A3E820075164F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F90252D31C497B9E0075164F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F902531A1C4A3E820075164F /* SystemConfiguration.framework in Frameworks */,
+				F90253151C4A13940075164F /* libicucore.A.tbd in Frameworks */,
+				F90253131C4993330075164F /* IMFCore.framework in Frameworks */,
+				F90253111C497DA00075164F /* CFNetwork.framework in Frameworks */,
+				F902530F1C497D950075164F /* AudioToolbox.framework in Frameworks */,
+				F902530D1C497D890075164F /* AVFoundation.framework in Frameworks */,
+				F902530B1C497D7B0075164F /* QuartzCore.framework in Frameworks */,
+				F90253091C497D700075164F /* CoreAudio.framework in Frameworks */,
+				F90253071C497D610075164F /* Security.framework in Frameworks */,
+				F90253051C497D570075164F /* Foundation.framework in Frameworks */,
+				F90253031C497CBF0075164F /* watsonsdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90252EF1C497B9E0075164F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F90252CD1C497B9E0075164F = {
+			isa = PBXGroup;
+			children = (
+				F90252D81C497B9E0075164F /* WatsonSpeachToText */,
+				F90252F51C497B9E0075164F /* WatsonSpeachToTextTests */,
+				F90252D71C497B9E0075164F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F90252D71C497B9E0075164F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F90252D61C497B9E0075164F /* Watson_Speech.app */,
+				F90252F21C497B9E0075164F /* Watson_Speech.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F90252D81C497B9E0075164F /* WatsonSpeachToText */ = {
+			isa = PBXGroup;
+			children = (
+				F90253011C497CBF0075164F /* Framework */,
+				F90252DC1C497B9E0075164F /* AppDelegate.h */,
+				F90252DD1C497B9E0075164F /* AppDelegate.m */,
+				F90252DF1C497B9E0075164F /* IBMW3VoiceViewController.h */,
+				F90252E01C497B9E0075164F /* IBMW3VoiceViewController.m */,
+				F90252E21C497B9E0075164F /* Main.storyboard */,
+				F90252E81C497B9E0075164F /* Assets.xcassets */,
+				F90252EA1C497B9E0075164F /* LaunchScreen.storyboard */,
+				F90252ED1C497B9E0075164F /* Info.plist */,
+				F90252E51C497B9E0075164F /* WatsonSpeachToText.xcdatamodeld */,
+				F90252D91C497B9E0075164F /* Supporting Files */,
+			);
+			path = WatsonSpeachToText;
+			sourceTree = "<group>";
+		};
+		F90252D91C497B9E0075164F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F90252DA1C497B9E0075164F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F90252F51C497B9E0075164F /* WatsonSpeachToTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				F90252F61C497B9E0075164F /* WatsonSpeachToTextTests.m */,
+				F90252F81C497B9E0075164F /* Info.plist */,
+			);
+			path = WatsonSpeachToTextTests;
+			sourceTree = "<group>";
+		};
+		F90253011C497CBF0075164F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F90253191C4A3E820075164F /* SystemConfiguration.framework */,
+				F90253141C4A13940075164F /* libicucore.A.tbd */,
+				F90253121C4993330075164F /* IMFCore.framework */,
+				F90253101C497DA00075164F /* CFNetwork.framework */,
+				F902530E1C497D950075164F /* AudioToolbox.framework */,
+				F902530C1C497D890075164F /* AVFoundation.framework */,
+				F902530A1C497D7B0075164F /* QuartzCore.framework */,
+				F90253081C497D700075164F /* CoreAudio.framework */,
+				F90253061C497D610075164F /* Security.framework */,
+				F90253041C497D570075164F /* Foundation.framework */,
+				F90253021C497CBF0075164F /* watsonsdk.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F90252D51C497B9E0075164F /* Watson_Speech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90252FB1C497B9E0075164F /* Build configuration list for PBXNativeTarget "Watson_Speech" */;
+			buildPhases = (
+				F90252D21C497B9E0075164F /* Sources */,
+				F90252D31C497B9E0075164F /* Frameworks */,
+				F90252D41C497B9E0075164F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Watson_Speech;
+			productName = WatsonSpeachToText;
+			productReference = F90252D61C497B9E0075164F /* Watson_Speech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F90252F11C497B9E0075164F /* Watson_SpeechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90252FE1C497B9E0075164F /* Build configuration list for PBXNativeTarget "Watson_SpeechTests" */;
+			buildPhases = (
+				F90252EE1C497B9E0075164F /* Sources */,
+				F90252EF1C497B9E0075164F /* Frameworks */,
+				F90252F01C497B9E0075164F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F90252F41C497B9E0075164F /* PBXTargetDependency */,
+			);
+			name = Watson_SpeechTests;
+			productName = WatsonSpeachToTextTests;
+			productReference = F90252F21C497B9E0075164F /* Watson_Speech.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F90252CE1C497B9E0075164F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					F90252D51C497B9E0075164F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F90252F11C497B9E0075164F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F90252D51C497B9E0075164F;
+					};
+				};
+			};
+			buildConfigurationList = F90252D11C497B9E0075164F /* Build configuration list for PBXProject "Watson_Speech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F90252CD1C497B9E0075164F;
+			productRefGroup = F90252D71C497B9E0075164F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F90252D51C497B9E0075164F /* Watson_Speech */,
+				F90252F11C497B9E0075164F /* Watson_SpeechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F90252D41C497B9E0075164F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90252EC1C497B9E0075164F /* LaunchScreen.storyboard in Resources */,
+				F90252E91C497B9E0075164F /* Assets.xcassets in Resources */,
+				F90252E41C497B9E0075164F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90252F01C497B9E0075164F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F90252D21C497B9E0075164F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90252E11C497B9E0075164F /* IBMW3VoiceViewController.m in Sources */,
+				F90252DE1C497B9E0075164F /* AppDelegate.m in Sources */,
+				F90252DB1C497B9E0075164F /* main.m in Sources */,
+				F90252E71C497B9E0075164F /* WatsonSpeachToText.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90252EE1C497B9E0075164F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90252F71C497B9E0075164F /* WatsonSpeachToTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F90252F41C497B9E0075164F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F90252D51C497B9E0075164F /* Watson_Speech */;
+			targetProxy = F90252F31C497B9E0075164F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F90252E21C497B9E0075164F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F90252E31C497B9E0075164F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F90252EA1C497B9E0075164F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F90252EB1C497B9E0075164F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F90252F91C497B9E0075164F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7a0ae380-356c-4c41-a358-ed64837f45b1";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F90252FA1C497B9E0075164F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "7a0ae380-356c-4c41-a358-ed64837f45b1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F90252FC1C497B9E0075164F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonSpeachToText/Framework",
+				);
+				INFOPLIST_FILE = WatsonSpeachToText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitise.voice;
+				PRODUCT_NAME = Watson_Speech;
+				PROVISIONING_PROFILE = "7a0ae380-356c-4c41-a358-ed64837f45b1";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F90252FD1C497B9E0075164F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: P VAGHASIYA (H463RKEGEG)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonSpeachToText/Framework",
+				);
+				INFOPLIST_FILE = WatsonSpeachToText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitise.voice;
+				PRODUCT_NAME = Watson_Speech;
+				PROVISIONING_PROFILE = "7a0ae380-356c-4c41-a358-ed64837f45b1";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F90252FF1C497B9E0075164F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatsonSpeachToTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitise.voice;
+				PRODUCT_NAME = Watson_Speech;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson_Speech.app/Watson_Speech";
+			};
+			name = Debug;
+		};
+		F90253001C497B9E0075164F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatsonSpeachToTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monitise.voice;
+				PRODUCT_NAME = Watson_Speech;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson_Speech.app/Watson_Speech";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F90252D11C497B9E0075164F /* Build configuration list for PBXProject "Watson_Speech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90252F91C497B9E0075164F /* Debug */,
+				F90252FA1C497B9E0075164F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90252FB1C497B9E0075164F /* Build configuration list for PBXNativeTarget "Watson_Speech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90252FC1C497B9E0075164F /* Debug */,
+				F90252FD1C497B9E0075164F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90252FE1C497B9E0075164F /* Build configuration list for PBXNativeTarget "Watson_SpeechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90252FF1C497B9E0075164F /* Debug */,
+				F90253001C497B9E0075164F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F90252E51C497B9E0075164F /* WatsonSpeachToText.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F90252E61C497B9E0075164F /* WatsonSpeachToText.xcdatamodel */,
+			);
+			currentVersion = F90252E61C497B9E0075164F /* WatsonSpeachToText.xcdatamodel */;
+			path = WatsonSpeachToText.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F90252CE1C497B9E0075164F /* Project object */;
+}
