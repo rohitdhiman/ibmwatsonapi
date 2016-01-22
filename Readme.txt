@@ -1,4 +1,4 @@
-﻿
+
 Platform-       iOS 
 iOS Version-  9.0 or above
 Xcode        -   7.0
@@ -30,9 +30,9 @@ There are two videos attached for reference.
 Steps to Run code:
 
 1.  Open terminal on MAC
-2.  Clone the code at your local system using below github repository:  git@github.com:rohitdhiman/ibmwatsonspeachtotext.git    
+2.  Clone the code at your local system using below github repository:  git@github.com:rohitdhiman/ibmwatsonapi.git    
 3.  Run below command on MAC terminal
-     git clone git@github.com:rohitdhiman/ibmwatsonspeachtotext.git
+     git clone git@github.com:rohitdhiman/ibmwatsonapi.git
 
 4. Open the code location 
 5. Open Watson_Speech.xcodeproj in xcode 7 or above version
